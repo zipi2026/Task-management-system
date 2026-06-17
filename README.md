@@ -1,5 +1,10 @@
 # Task Management System
 
+Full Stack Project:
+Frontend: Angular
+Backend: Node.js
+Database: SQL
+
 ## TL;DR
 Task Management System is a web application for managing tasks and assignments. It combines an Angular + TypeScript frontend with a Node.js + Express backend, backed by SQL Server for persistent data storage.
 
