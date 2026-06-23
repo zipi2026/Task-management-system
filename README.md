@@ -1,90 +1,59 @@
 # Task Management System
 
-## Technology Stack
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
 
-- Frontend: Angular + TypeScript
-- Backend: Node.js + Express
-- Database: SQL Server
+## Development server
 
-## TL;DR
-Task Management System is a web application for managing tasks and assignments. It combines an Angular + TypeScript frontend with a Node.js + Express backend, backed by SQL Server for persistent data storage.
-
-## Overview
-Task Management System provides a task management interface where users can create, view, update, and organize tasks. The frontend is built with Angular for a responsive user experience, while the backend API handles all business logic, user authentication, and database operations through SQL Server.
-
-## Installation
+To start a local development server, run:
 
 ```bash
-git clone <repository-url>
-cd Task-Management-System
-
-cd client
-npm install
-
-cd ../server
-npm install
+ng serve
 ```
 
-> Note: Ensure SQL Server is properly configured and accessible before running the backend.
+Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Running the project
+## Code scaffolding
 
-### Backend
-From the `server` folder:
+Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+
 ```bash
-npm start
+ng generate component component-name
 ```
-The Express server runs on port `3000` (or the configured port in your environment).
 
-### Frontend
-From the `client` folder:
+For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+
 ```bash
-npm start
+ng generate --help
 ```
-This starts the Angular development server on port `4200`.
 
-### Production / Build
-The frontend can be built with:
+## Building
+
+To build the project run:
+
 ```bash
-cd client
-npm run build
-```
-This generates optimized production files in the `dist/` directory.
-
-## Environment variables
-
-### Server
-Create a `.env` file in the `server` directory:
-```env
-DB_SERVER=localhost\SQLEXPRESS
-DB_NAME=TaskManagementDB
-DB_DRIVER=ODBC Driver 17 for SQL Server
+ng build
 ```
 
-### Client
-Before running the frontend, ensure that `client/public/config/ipConfig.json` contains the correct backend API address.
+This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-## Project structure overview
+## Running unit tests
 
-- `client/` — Angular + TypeScript frontend with components and services
-- `server/` — Node.js Express backend with database services and API routes
-- `server/SQL/` — SQL database schema and scripts
+To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
 
-## Main features
+```bash
+ng test
+```
 
-- Angular frontend with responsive UI components
-- Task creation, viewing, and management
-- User authentication and login system
-- Real-time data synchronization between client and server
-- SQL Server database persistence
-- RESTful API for backend services
+## Running end-to-end tests
 
-## Key directories
+For end-to-end (e2e) testing, run:
 
-- `client/src/app/` — Angular components, services, and models
-- `server/services/` — Backend business logic and database operations
+```bash
+ng e2e
+```
 
-## Notes
+Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
-- Make sure Node.js and SQL Server are installed before running the project.
-- Recommended Node.js version: 18+
+## Additional Resources
+
+For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
